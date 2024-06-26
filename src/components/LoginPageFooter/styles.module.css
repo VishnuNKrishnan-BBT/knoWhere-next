@@ -1,0 +1,41 @@
+.wrapper{
+    height: 30vh;
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    background: rgb(42, 42, 42);
+    /* background: linear-gradient(120deg, rgba(0,0,0,1) 0%, rgba(52,52,52,1) 100%); */
+    background-image: url('../../assets/footerBG.jpg');
+    background-size: cover;
+    background-position: center;
+    background-blend-mode:darken;
+}
+
+.CTAs{
+    /* background-color: antiquewhite; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.CTALabel{
+    font-size: 18px;
+    font-weight: 100;
+    color: #dddddd;
+}
+
+.CTALabel:not(:last-child){
+    padding-bottom: 20px;
+}
+
+.developerLabel{
+    font-size: 12px;
+    font-weight: 100;
+    color: #dddddd;
+    margin-top: 40px;
+}

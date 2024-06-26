@@ -1,0 +1,52 @@
+.searchbarHolder{
+    /* border: 2px solid green; */
+    padding: 25px 25px 0 25px;
+}
+
+.searchInput{
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+.headingBlock{
+    /* border: 2px solid red; */
+    padding: 25px 25px 0 25px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.sectionHeading{
+    font-size: 15px;
+}
+
+.switchHolder{
+    margin: 0 10px;
+    /* border: 2px solid red; */
+    padding: 0;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.countHolder{
+    background-color: #ffffff;
+    color: #aaaaaa;
+    padding: 3px 10px;
+    border-radius: 5px;
+    width: 30px;
+    display: inline-block;
+}
+
+.mapHolder{
+    width: 100vw;
+    height: 325px;
+    /* border: 2px solid red; */
+    transform: translateY(-25px);
+}

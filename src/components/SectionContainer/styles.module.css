@@ -1,0 +1,6 @@
+.wrapper{
+    height: 85vh;
+    /* border: 2px solid red; */
+    /* padding: 0 25px; */
+    overflow-y: scroll;
+}

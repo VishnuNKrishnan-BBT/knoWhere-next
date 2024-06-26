@@ -1,0 +1,6 @@
+.mapHolder{
+    width: 100vw;
+    height: 325px;
+    /* border: 2px solid red; */
+    transform: translateY(-25px);
+}

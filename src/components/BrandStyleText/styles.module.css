@@ -1,0 +1,14 @@
+.brandStyleText{
+    /* font-size: 28px; */
+    font-weight: 800;
+    /* margin-bottom: 10px; */
+    /* Set background to gradient */
+    background: linear-gradient(to right, rgb(45, 47, 112), rgb(18, 21, 61));
+    
+    /* Clip gradient to text */
+    -webkit-background-clip: text;
+    background-clip: text;
+    
+    /* Set transparent text color */
+    color: transparent;
+}

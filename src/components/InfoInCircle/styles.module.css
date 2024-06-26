@@ -1,0 +1,23 @@
+.wrapper{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.parkingIcon{
+    font-size: 38px;
+    font-weight: 800;
+}
+
+.leg{
+    position:relative;
+    width: 5px;
+    height: 30px;
+    background-color: aliceblue;
+    transform: translate(-36px, 50px);
+}

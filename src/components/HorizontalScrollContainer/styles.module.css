@@ -1,0 +1,17 @@
+.wrapper{
+    /* border: 2px solid green; */
+    width: 100%;
+    overflow-y: scroll;
+}
+
+.childrenContainer{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    width: fit-content;
+}
+
+.wrapper::-webkit-scrollbar {
+    display: none;
+  }

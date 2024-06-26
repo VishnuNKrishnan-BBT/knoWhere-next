@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: '__Kanit_71655f'; /* TODO: Correct this... */
+}
+
+body{
+    background-color: rgb(232, 232, 232);
+}
+
+/* Webkit (Chrome, Safari) */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+/* CSS to remove blue background on touch */
+a, button, div {
+    -webkit-tap-highlight-color: transparent; /* Remove tap highlight on iOS */
+    -webkit-touch-callout: none; /* Disable callout (context menu) on long tap */
+    -webkit-user-select: none; /* Disable text selection on long tap */
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-appearance: none; /* Remove default styling on iOS */
+    -moz-appearance: none;
+    appearance: none;
+  }
+  
+  a:active, button:active, div:active {
+    background-color: transparent !important; /* Remove blue background */
+  }

@@ -1,0 +1,59 @@
+.wrapper{
+    width: 225px;
+    /* border: 2px solid red; */
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 20px 5px 20px 5px;
+    -webkit-box-shadow: 0px 0px 25px -15px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 25px -15px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 25px -15px rgba(0,0,0,0.75);
+    cursor: pointer;
+}
+  
+/* Optional: Remove margin from the last flex item to prevent unnecessary gap */
+.wrapper:first-child {
+    margin-left: 25px;
+}
+
+.wrapper:last-child {
+    margin-right: 25px;
+}
+
+.titleHolder{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.avatar{
+    height: 20px;
+    width: 20px;
+    margin-right: 8px;
+    transform: translateY(1px);
+}
+
+.licenseNumber{
+    font-size: 28px;
+    font-weight: 800;
+    /* margin-bottom: 10px; */
+    /* Set background to gradient */
+    background: linear-gradient(to right, rgb(45, 47, 112), rgb(18, 21, 61));
+    
+    /* Clip gradient to text */
+    -webkit-background-clip: text;
+    background-clip: text;
+    
+    /* Set transparent text color */
+    color: transparent;
+}
+
+.vehicleName{
+    color: rgb(24, 29, 101);
+    font-weight: 200;
+}
+
+.driverName{
+    color: rgba(24, 29, 101, 0.346);
+    font-weight: 200;
+}

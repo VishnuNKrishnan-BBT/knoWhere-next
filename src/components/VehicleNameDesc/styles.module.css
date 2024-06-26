@@ -1,0 +1,43 @@
+.wrapper{
+    height: 100px;
+    width: 100%;
+    /* border: 2px solid black; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.logoHolder{
+    height: 100%;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-size: 60%;
+    background-repeat: no-repeat;
+}
+
+.descHolder{
+    height: 100%;
+    grid-column-start: 3;
+    grid-column-end: 9;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 20px;
+}
+
+.manufacturer{
+    font-weight: 200;
+    color: #666666;
+}
+
+.model{
+    font-weight: 800;
+    color: #000000;
+    text-transform: uppercase;
+}
