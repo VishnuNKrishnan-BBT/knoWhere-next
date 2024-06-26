@@ -2,6 +2,7 @@ import React from 'react'
 import styles from './styles.module.css'
 import NoPhoto from '../../assets/user.png'
 import GoogleIcon from '../GoogleIcon/GoogleIcon'
+import BrandStyleText from '../BrandStyleText/BrandStyleText'
 
 function DriverCardMini({
     fullName = "Name not available",
@@ -17,7 +18,7 @@ function DriverCardMini({
         <div className={`${styles.wrapper}`} style={{ '--index': 1 }}>
             <div className={`${styles.photoHolder}`} style={{ backgroundImage: backgroundImg ? `url("${backgroundImg}")` : `url("https://upload.wikimedia.org/wikipedia/commons/2/23/Nissan_2020_logo.svg")` }}></div>
             <p className={`${styles.dates}`}>{startDate}&emsp;to&emsp;{endDate}</p>
-            <p className={`${styles.name}`}>{fullName}</p>
+            <p className={`${styles.name}`}><BrandStyleText text={fullName} /></p>
             <div className={`${styles.miniInfoHolder}`}>
                 <div className={`${styles.infoCard}`}>
                     <span className={`${styles.info}`}>{violationCount}</span>
