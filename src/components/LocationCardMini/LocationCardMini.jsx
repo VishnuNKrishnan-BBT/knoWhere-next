@@ -1,6 +1,7 @@
 import React from 'react'
 import style from './styles.module.css'
 import InfoInCircle from '../InfoInCircle/InfoInCircle'
+import BrandStyleText from '../BrandStyleText/BrandStyleText'
 
 function LocationCardMini({
     timestamp = "",
@@ -20,7 +21,7 @@ function LocationCardMini({
                 />
             </div>
             <div className={style.infoHolder}>
-                <p className={style.locationMain}>{mainText}</p>
+                <p className={style.locationMain}><BrandStyleText text={mainText} /></p>
                 <p className={style.locationSub1}>{subText1}</p>
                 <p className={style.locationSub2}>{subText2}</p>
             </div>

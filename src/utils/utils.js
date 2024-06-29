@@ -1,5 +1,3 @@
-import { useRouter } from "next/navigation"
-
 export const toggleFilter = (currentVal, modifierFn) => {
     navigator.vibrate(50)
     modifierFn(!currentVal)
