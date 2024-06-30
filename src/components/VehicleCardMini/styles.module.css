@@ -1,5 +1,5 @@
 .wrapper{
-    width: 225px;
+    width: 190px;
     /* border: 2px solid red; */
     background-color: #ffffff;
     border-radius: 15px;
@@ -34,21 +34,13 @@
 }
 
 .licenseNumber{
-    font-size: 28px;
+    font-size: 20px;
     font-weight: 800;
     /* margin-bottom: 10px; */
-    /* Set background to gradient */
-    background: linear-gradient(to right, rgb(45, 47, 112), rgb(18, 21, 61));
-    
-    /* Clip gradient to text */
-    -webkit-background-clip: text;
-    background-clip: text;
-    
-    /* Set transparent text color */
-    color: transparent;
 }
 
 .vehicleName{
+    font-size: 13px;
     color: rgb(24, 29, 101);
     font-weight: 200;
 }
@@ -56,4 +48,5 @@
 .driverName{
     color: rgba(24, 29, 101, 0.346);
     font-weight: 200;
+    font-size: 13px;
 }

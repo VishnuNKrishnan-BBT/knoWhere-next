@@ -15,19 +15,17 @@ function DriverCardMini({
     index = 1
 }) {
     return (
-        <div className={`${styles.wrapper}`} style={{ '--index': 1 }}>
-            <div className={`${styles.photoHolder}`} style={{ backgroundImage: backgroundImg ? `url("${backgroundImg}")` : `url("https://upload.wikimedia.org/wikipedia/commons/2/23/Nissan_2020_logo.svg")` }}></div>
-            <p className={`${styles.dates}`}>{startDate}&emsp;to&emsp;{endDate}</p>
-            <p className={`${styles.name}`}><BrandStyleText text={fullName} /></p>
-            <div className={`${styles.miniInfoHolder}`}>
-                <div className={`${styles.infoCard}`}>
-                    <span className={`${styles.info}`}>{violationCount}</span>
-                </div>
-                <div className={`${styles.infoCard}`}>
-                    <span className={`${styles.info}`}>{totalDistanceDriven} kms</span>
-                </div>
-                <div className={`${styles.infoCard}`}>
-                    <span className={`${styles.info}`}>{maxSpeed} km/h</span>
+        <div className={`${styles.wrapper}`}>
+            <div className={`${styles.photoHolder}`}>
+                <img className={`${styles.photo}`} src={backgroundImg} alt="" />
+            </div>
+            <div className={`${styles.infoHolder}`}>
+                <p className={`${styles.infoText}`}>{`${startDate} - ${endDate}`}</p>
+                <p className={`${styles.name}`}><BrandStyleText text={fullName} /></p>
+                <div className={`${styles.infoRow}`}>
+                    <p className={`${styles.infoRowItem}`}>{violationCount}</p>
+                    <p className={`${styles.infoRowItem}`}>{totalDistanceDriven} kms</p>
+                    <p className={`${styles.infoRowItem}`}>{maxSpeed} km/h</p>
                 </div>
             </div>
         </div>

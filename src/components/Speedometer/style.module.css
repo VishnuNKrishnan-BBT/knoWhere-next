@@ -1,0 +1,23 @@
+.wrapper{
+    height: 100px;
+    width: 100px;
+    border: 12px solid rgb(176, 13, 13);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+}
+
+.mainText{
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.unit{
+    font-size: 15px;
+    font-weight: 200;
+    line-height: 15px;
+    transform: translateY(-12px);
+}

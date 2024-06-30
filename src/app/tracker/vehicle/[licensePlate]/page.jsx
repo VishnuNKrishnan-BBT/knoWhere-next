@@ -11,12 +11,13 @@ import TabSwitcher from '@/components/TabSwitcher/TabSwitcher'
 import DriverCardMini from '@/components/DriverCardMini/DriverCardMini'
 import { driverHistory } from '@/devFiles/vehicleList_mini'
 import LocationCardMini from '@/components/LocationCardMini/LocationCardMini'
+import VehicleMonitorSection from '@/components/VehicleMonitorSection/VehicleMonitorSection'
 
 function page({ params }) {
 
     const licensePlate = decodeURIComponent(params.licensePlate)
 
-    const [activeTabIndex, setActiveTabIndex] = useState(0)
+    const [activeTabIndex, setActiveTabIndex] = useState(1)
     const handleTabChange = tabIndex => {
         setActiveTabIndex(tabIndex)
     }
@@ -41,9 +42,12 @@ function page({ params }) {
                 </SectionContainer> */}
 
                 <SectionContainer>
-                    <VehicleNameDesc manufacturer='Nissan' model='Pathfinder' />
+                    <VehicleNameDesc logo='https://lh4.googleusercontent.com/proxy/7Rm7bMpg6gCVYpaewBbwe_9bgB6JIGS1cQLyTsiPgkKBvst5U_BGJQSHjFDl--vBee88ra4hvuhWF3LMtrDBDXkJnn8KzZQK0o0h3335SmWThHyppt0' manufacturer='Lexus' model='GX460' />
                     <TabSwitcher tabs={VehicleDetailsTabs} activeTabIndex={activeTabIndex} onChange={handleTabChange} />
                     <SectionContainer style={{ height: "calc(85vh - 146px)" }}>
+                        { //Monitor Section
+                            activeTabIndex == 0 && <VehicleMonitorSection />
+                        }
                         { //Locations Section
                             activeTabIndex == 1 && locationHistory.map((obj, index) => <LocationCardMini
                                 key={`LocationCardMini_${index}`}

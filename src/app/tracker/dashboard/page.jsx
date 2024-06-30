@@ -48,7 +48,7 @@ function page() {
 
     return (
         <div>
-            <PageHeading heading={'Dashboard'} caption={'Tap a card to access more details...'} mini back />
+            <PageHeading heading={'Dashboard'} caption={'Tap a card to access more details...'} mini />
             <main>
                 {/* <div className={`${styles.mapHolder}`}>
                     <ReactMapGL
@@ -65,7 +65,7 @@ function page() {
                         <input value={filter_query} onChange={e => { handleQueryChange(e, vehicleList_mini, setListings, setFilter_Query) }} className={`${styles.searchInput}`} type="text" placeholder='Search with license plate, driver name etc.' />
                     </div>
                     <div className={`${styles.headingBlock}`}>
-                        <p className={`${styles.sectionHeading}`}><span className={`${styles.countHolder}`}>{listings.filter(obj => !obj.online).length}</span> Offline</p>
+                        <p className={`${styles.switchText}`}><span className={`${styles.countHolder}`}>{listings.filter(obj => !obj.online).length}</span> Offline</p>
                         <div className={`${styles.switchHolder}`}>
                             <Switch
                                 checked={filter_online}
@@ -77,7 +77,7 @@ function page() {
                                 width={35}
                             />
                         </div>
-                        <p className={`${styles.sectionHeading}`}>Online <span className={`${styles.countHolder}`}>{listings.filter(obj => obj.online).length}</span></p>
+                        <p className={`${styles.switchText}`}>Online <span className={`${styles.countHolder}`}>{listings.filter(obj => obj.online).length}</span></p>
                     </div>
                     <HorizontalScrollContainer>
                         {isLoading && <VehicleCardMini_Skeleton />}
@@ -98,7 +98,7 @@ function page() {
                     </HorizontalScrollContainer>
 
                     <div className={`${styles.headingBlock}`}>
-                        <p className={`${styles.sectionHeading}`}><span className={`${styles.countHolder}`}>{listings.filter(obj => !obj.assigned).length}</span> Unassigned</p>
+                        <p className={`${styles.switchText}`}><span className={`${styles.countHolder}`}>{listings.filter(obj => !obj.assigned).length}</span> Unassigned</p>
                         <div className={`${styles.switchHolder}`}>
                             <Switch
                                 checked={filter_assigned}
@@ -110,7 +110,7 @@ function page() {
                                 width={35}
                             />
                         </div>
-                        <p className={`${styles.sectionHeading}`}>Assigned <span className={`${styles.countHolder}`}>{listings.filter(obj => !obj.assigned).length}</span></p>
+                        <p className={`${styles.switchText}`}>Assigned <span className={`${styles.countHolder}`}>{listings.filter(obj => !obj.assigned).length}</span></p>
                     </div>
                     <HorizontalScrollContainer>
                         {isLoading && <VehicleCardMini_Skeleton />}

@@ -2,10 +2,9 @@
     width: 100%;
     height: 100px;
     /* border: 2px solid red; */
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    gap: 3px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 10px 5px;
     animation: cardLoad 0.2s 1 ease-in-out;
 }
@@ -27,55 +26,55 @@
 
 .wrapper:nth-child(even){
     background: rgb(16,4,30);
-    background: linear-gradient(30deg, rgba(195, 182, 210, 0.1) 0%, rgba(63, 2, 133, 0.1) 50%);
+    background: linear-gradient(30deg, rgba(232, 229, 236, 0.458) 0%, rgba(63, 2, 133, 0.1) 50%);
 }
 
 .photoHolder{
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 5;
-    /* border: 2px solid green; */
+    width: 80px;
+    height: 80px;
+    /* border: 2px solid red; */
+    border-radius: 50%;
+    background-size: contain;
     background-position: center;
-    background-size: 70%;
-    background-repeat: no-repeat;
-    border-radius: 5px;
-}
-
-.dates{
-    grid-column-start: 3;
-    grid-column-end: 8;
-    grid-row-start: 1;
-    grid-row-end: 2;
-    font-size: 14px;
-    font-weight: 200;
-}
-
-.name{
-    grid-column-start: 3;
-    grid-column-end: 8;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    font-size: 19px;
-    font-weight: 600;
-}
-
-.miniInfoHolder{
-    grid-column-start: 3;
-    grid-column-end: 8;
-    grid-row-start: 3;
-    grid-row-end: 5;
-    /* border: 2px solid blue; */
+    overflow: hidden;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 
-.infoCard{
-    min-width: 20px;
+.photo{
+    height: 100%;
 }
 
-.info{
+.infoHolder{
+    width: calc(100% - 80px);
+    height: 100px;
+    padding-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    /* border: 2px solid green; */
+}
+
+.name{
+    font-size: 17px;
+}
+
+.infoText{
+    font-size: 12px;
     font-weight: 200;
-    font-size: 14px;
+}
+
+.infoRow{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.infoRowItem{
+    width: 80px;
+    font-size: 12px;
+    font-weight: 200;
 }

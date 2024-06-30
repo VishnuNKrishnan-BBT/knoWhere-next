@@ -8,13 +8,18 @@
 }
 
 .itemCard{
-    padding: 10px 20px;
+    width: calc(100vw/4);
+    padding: 13px 20px;
     /* border-radius: 5px 5px 0 0; */
     border-bottom: 2px solid white;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .itmLabel{
+    font-size: 13px;
     font-weight: 200;
     color: #666666;
     cursor: pointer;

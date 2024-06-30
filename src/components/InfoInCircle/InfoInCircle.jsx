@@ -8,13 +8,14 @@ function InfoInCircle({
 }) {
     return (
         <>
+            {/* CIRCLE */}
             <div className={styles.wrapper}>
                 {type === 'parking' && <p className={styles.parkingIcon}>P</p>}
-                {type !== 'parking' && <p>{text}</p>}
+                {type !== 'parking' && <p className={styles.mainText}>{text}</p>}
             </div>
-            <div className={styles.leg} style={{ height: extendLeg ? '30px' : '0px' }}>
 
-            </div>
+            {/* LEG */}
+            <div className={styles.leg} style={{ height: extendLeg ? '30px' : '0px' }}></div>
         </>
     )
 }

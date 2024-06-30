@@ -9,7 +9,7 @@ function VehicleNameDesc({
 }) {
     return (
         <div className={`${styles.wrapper}`}>
-            <div className={`${styles.logoHolder}`} style={{ backgroundImage: `url("https://upload.wikimedia.org/wikipedia/commons/2/23/Nissan_2020_logo.svg")` }}></div>
+            <div className={`${styles.logoHolder}`} style={{ backgroundImage: `url("${logo}")` }}></div>
             <div className={`${styles.descHolder}`}>
                 <p className={`${styles.manufacturer}`}>{manufacturer}</p>
                 <h2 className={`${styles.model} ${GlobalStyles.gradientText}`}>{model}</h2>

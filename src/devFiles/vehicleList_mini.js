@@ -106,7 +106,7 @@ export const driverHistory = [
 
 export const VehicleDetailsTabs = [
     {
-        title: "Analytics"
+        title: "Monitor"
     },
     {
         title: "Locations"
@@ -121,46 +121,60 @@ export const VehicleDetailsTabs = [
 
 export const locationHistory = [
     {
-        timestamp: 1900291992,
+        timestamp: "12:20",
         parked: false,
         main: "Abu Shagara",
         sub1: "Omran Taryam Street",
         sub2: "Sharjah"
     },
     {
-        timestamp: 1900291992,
+        timestamp: "12:20",
         parked: false,
         main: "Al Majaz 1",
         sub1: "Al Khalidiya Street",
         sub2: "Sharjah"
     },
     {
-        timestamp: 1900291992,
+        timestamp: "12:20",
         parked: false,
-        main: "AAl Majaz 3",
+        main: "Al Majaz 3",
         sub1: "Al Khalidiya Street",
         sub2: "Sharjah"
     },
     {
-        timestamp: 1900291992,
+        timestamp: "12:20",
         parked: true,
         main: "Al Khan",
         sub1: "Kurdam Street",
         sub2: "Sharjah"
     },
     {
-        timestamp: 1900291992,
+        timestamp: "12:20",
         parked: false,
         main: "Al Taawun",
         sub1: "Kurdam Street",
         sub2: "Sharjah"
     },
     {
-        timestamp: 1900291992,
+        timestamp: "12:20",
         parked: true,
         main: "Mamzar",
         sub1: "Al Ittihad Street (E11)",
         sub2: "Dubai"
+    },
+    {
+        timestamp: "12:20",
+        parked: false,
+        main: "Al Majaz 3",
+        sub1: "Al Khalidiya Street",
+        sub2: "Sharjah"
+    },
+    {
+        timestamp: "12:20",
+        parked: false,
+        main: "Al Taawun",
+        sub1: "Kurdam Street",
+        sub2: "Sharjah"
     }
 ]
 
