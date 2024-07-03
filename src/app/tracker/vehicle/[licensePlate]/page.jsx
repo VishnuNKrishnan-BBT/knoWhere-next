@@ -17,7 +17,7 @@ function page({ params }) {
 
     const licensePlate = decodeURIComponent(params.licensePlate)
 
-    const [activeTabIndex, setActiveTabIndex] = useState(1)
+    const [activeTabIndex, setActiveTabIndex] = useState(0)
     const handleTabChange = tabIndex => {
         setActiveTabIndex(tabIndex)
     }
@@ -42,7 +42,7 @@ function page({ params }) {
                 </SectionContainer> */}
 
                 <SectionContainer>
-                    <VehicleNameDesc logo='https://lh4.googleusercontent.com/proxy/7Rm7bMpg6gCVYpaewBbwe_9bgB6JIGS1cQLyTsiPgkKBvst5U_BGJQSHjFDl--vBee88ra4hvuhWF3LMtrDBDXkJnn8KzZQK0o0h3335SmWThHyppt0' manufacturer='Lexus' model='GX460' />
+                    <VehicleNameDesc logo='https://seeklogo.com/images/L/land-rover-logo-86296C9BE7-seeklogo.com.png' manufacturer='Land Rover' model='RANGE ROVER' />
                     <TabSwitcher tabs={VehicleDetailsTabs} activeTabIndex={activeTabIndex} onChange={handleTabChange} />
                     <SectionContainer style={{ height: "calc(85vh - 146px)" }}>
                         { //Monitor Section

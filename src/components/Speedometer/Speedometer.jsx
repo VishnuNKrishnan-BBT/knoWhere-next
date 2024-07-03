@@ -8,7 +8,7 @@ function Speedometer({
     return (
         <div className={`${styles.wrapper}`}>
             <span className={`${styles.mainText}`}>{speed}</span>
-            <span className={`${styles.unit}`}>{unit}</span>
+            {speed !== 'P' && <span className={`${styles.unit}`}>{unit}</span>}
         </div>
     )
 }
