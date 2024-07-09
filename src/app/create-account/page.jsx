@@ -3,9 +3,9 @@
 import React, { useState } from 'react'
 import PageHeading from '../../components/PageHeading/PageHeading'
 import LoginPageFooter from '../../components/LoginPageFooter/LoginPageFooter'
-import CreateAccountFormS1 from '../../components/CreateAccountForm/CreateAccountFormS1'
-import CreateAccountFormS2 from '../../components/CreateAccountForm/CreateAccountFormS2'
-import CreateAccountFormS3 from '../../components/CreateAccountForm/CreateAccountFormS3'
+import CreateAccountFormS1 from '../../components/FormStages/CreateAccountFormS1'
+import CreateAccountFormS2 from '../../components/FormStages/CreateAccountFormS2'
+import CreateAccountFormS3 from '../../components/FormStages/CreateAccountFormS3'
 
 function page() {
     const [stage, setStage] = useState(1)

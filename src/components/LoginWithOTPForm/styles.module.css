@@ -15,6 +15,10 @@
     align-items: center;
 }
 
+.inputBlock{
+    width: 100%;
+}
+
 .inputBlock:not(:last-child){
     padding: 0 0 50px 0;
 }

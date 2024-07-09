@@ -1,6 +1,9 @@
+'use client'
+
 import React from 'react'
 import styles from './styles.module.css'
 import GoogleIcon from '../GoogleIcon/GoogleIcon'
+import InputBoxes from '../InputBoxes/InputBoxes'
 
 function LoginWithOTPForm() {
     return (
@@ -12,7 +15,8 @@ function LoginWithOTPForm() {
 
                 <div className={styles.inputBlock}>
                     <label className={styles.label} htmlFor="">OTP</label>
-                    <input className={styles.input} type="number" />
+                    {/* <input className={styles.input} type="number" /> */}
+                    <InputBoxes />
                 </div>
 
                 <div className={styles.inputBlock}>

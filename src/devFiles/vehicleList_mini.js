@@ -183,7 +183,7 @@ export const viewPort1 = {
     height: 400,
     latitude: 37.833683,
     longitude: -122.493782, //-122.483696
-    zoom: 15
+    zoom: 14
 }
 
 export const routeMapStyle = {

@@ -1,0 +1,25 @@
+.wrapper{
+    width: 100%;
+    margin: 5px 0;
+    /* height: 50px; */
+    /* background-color: antiquewhite; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.inputBox{
+    width: 70px;
+    padding: 5px;
+    text-align: center;
+    font-size: 25px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    border: 2px solid #ffffff;
+    text-transform: uppercase;
+}
+
+.inputBox:focus{
+    border: 2px solid #52149d;
+}

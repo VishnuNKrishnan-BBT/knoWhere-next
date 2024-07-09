@@ -42,7 +42,7 @@ function page({ params }) {
                 </SectionContainer> */}
 
                 <SectionContainer>
-                    <VehicleNameDesc logo='https://seeklogo.com/images/L/land-rover-logo-86296C9BE7-seeklogo.com.png' manufacturer='Land Rover' model='RANGE ROVER' />
+                    <VehicleNameDesc logo='https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/BMW.svg/2048px-BMW.svg.png' manufacturer='BMW' model='X5 HSE Limited' />
                     <TabSwitcher tabs={VehicleDetailsTabs} activeTabIndex={activeTabIndex} onChange={handleTabChange} />
                     <SectionContainer style={{ height: "calc(85vh - 146px)" }}>
                         { //Monitor Section
