@@ -119,6 +119,21 @@ export const VehicleDetailsTabs = [
     }
 ]
 
+export const vehicleActionsTabs = [
+    {
+        title: "Assign"
+    },
+    {
+        title: "Notifications"
+    },
+    {
+        title: "Share"
+    },
+    {
+        title: "Set Alerts"
+    }
+]
+
 export const locationHistory = [
     {
         timestamp: "12:20",

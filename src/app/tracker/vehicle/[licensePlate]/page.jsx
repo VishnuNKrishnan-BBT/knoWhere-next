@@ -4,20 +4,23 @@ import React, { useState } from 'react'
 import styles from './style.module.css'
 import PageHeading from '@/components/PageHeading/PageHeading'
 import SectionContainer from '@/components/SectionContainer/SectionContainer'
-import ReactMapGL, { ViewState } from "react-map-gl"
-import { VehicleDetailsTabs, viewPort1, locationHistory } from '@/devFiles/vehicleList_mini'
+import { VehicleDetailsTabs, viewPort1, locationHistory, vehicleActionsTabs } from '@/devFiles/vehicleList_mini'
 import VehicleNameDesc from '@/components/VehicleNameDesc/vehicleNameDesc'
 import TabSwitcher from '@/components/TabSwitcher/TabSwitcher'
 import DriverCardMini from '@/components/DriverCardMini/DriverCardMini'
 import { driverHistory } from '@/devFiles/vehicleList_mini'
 import LocationCardMini from '@/components/LocationCardMini/LocationCardMini'
 import VehicleMonitorSection from '@/components/VehicleMonitorSection/VehicleMonitorSection'
+import VehicleActionsSection from '@/components/VehicleActionsSection/VehicleActionsSection'
+import VehicleActionItem from '@/components/VehicleActionItem/VehicleActionItem'
 
 function page({ params }) {
 
     const licensePlate = decodeURIComponent(params.licensePlate)
 
     const [activeTabIndex, setActiveTabIndex] = useState(0)
+    const [actionItemIndex, setActionItem] = useState(0) //-1 is for menu page. Array items start from 0.
+
     const handleTabChange = tabIndex => {
         setActiveTabIndex(tabIndex)
     }
@@ -71,6 +74,13 @@ function page({ params }) {
                                 maxSpeed={obj.maxSpeed}
                                 backgroundImg={obj.imgUrl}
                             />)
+                        }
+
+                        {   //Actions Section
+                            activeTabIndex == 3 && actionItemIndex == -1 && <VehicleActionsSection />
+                        }
+                        {
+                            activeTabIndex == 3 && actionItemIndex !== -1 && <VehicleActionItem index={actionItemIndex} />
                         }
                     </SectionContainer>
                 </SectionContainer>
