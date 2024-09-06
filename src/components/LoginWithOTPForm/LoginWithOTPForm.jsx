@@ -16,7 +16,7 @@ function LoginWithOTPForm() {
                 <div className={styles.inputBlock}>
                     <label className={styles.label} htmlFor="">OTP</label>
                     {/* <input className={styles.input} type="number" /> */}
-                    <InputBoxes />
+                    <InputBoxes onComplete={() => {console.log('OTP Complete')}}/>
                 </div>
 
                 <div className={styles.inputBlock}>

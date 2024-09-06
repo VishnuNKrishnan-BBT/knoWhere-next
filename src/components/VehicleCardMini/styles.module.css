@@ -9,6 +9,18 @@
     -moz-box-shadow: 0px 0px 25px -15px rgba(0,0,0,0.75);
     box-shadow: 0px 0px 25px -15px rgba(0,0,0,0.75);
     cursor: pointer;
+    animation: loadIn 0.1s ease-in-out 1;
+}
+
+@keyframes loadIn{
+    0%{
+        opacity: 0%;
+        transform: scale(80%);
+    }
+    100%{
+        opacity: 100%;
+        transform: scale(100%);
+    }
 }
   
 /* Optional: Remove margin from the last flex item to prevent unnecessary gap */
